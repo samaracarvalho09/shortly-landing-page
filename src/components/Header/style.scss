@@ -1,0 +1,177 @@
+.wrapper-desktop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+
+  padding: 36px 60px 28px;
+
+  .logo-links-container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  ul {
+    display: flex;
+    gap: 30px;
+
+    li {
+      color: hsl(257, 7%, 63%);
+      font-weight: 700;
+      cursor: pointer;
+
+      &:hover {
+        color: hsl(260, 8%, 14%);
+      }
+    }
+  }
+
+  button {
+    font-size: 18px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 28px;
+    
+    cursor: pointer;
+  }
+}
+.login-button {
+  margin-right: 20px;
+  background-color: transparent;
+  color: hsl(257, 7%, 63%);
+}
+
+.signup-button {
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+
+  &:hover {
+    background-color: hsl(180, 36%, 54%);
+    color: white;
+  }
+}
+.wrapper-mobile-header {
+  display: none;
+}
+
+/* MOBILE <= 375*/
+
+@media screen and (max-width: 375px) {
+  .wrapper-desktop-header {
+    display: none;
+  }
+
+  .wrapper-mobile-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .container-logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    padding: 26px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .links-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 100%;
+    height: auto;
+    padding: 30px;
+    margin-top: 30px;
+    margin-inline: 30px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 16px;
+  }
+
+  .links-container {
+    border-bottom: 1px solid hsl(257, 7%, 63%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  ul {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 28px;
+    background-color: transparent;
+    cursor: pointer;
+
+    // display: flex;
+    //     align-items: center;
+    // justify-content: center;
+  }
+  .login-button {
+    margin-right: 0px;
+    color: white;
+  }
+  
+  .signup-button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+  
+    &:hover {
+      background-color: hsl(180, 36%, 54%);
+    }
+  }
+}
+
+// ### Primary
+
+// - Cyan: hsl(180, 66%, 49%)
+// - Dark Violet: hsl(257, 27%, 26%)
+
+// ### Secondary
+
+// - Red: hsl(0, 87%, 67%)
+
+// ### Neutral
+
+// - Gray: hsl(0, 0%, 75%)
+// - Grayish Violet: hsl(257, 7%, 63%) #A4A4C4
+// - Very Dark Blue: hsl(255, 11%, 22%) #1D2B33
+// - Very Dark Violet: hsl(260, 8%, 14%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size: 18px
+
+// ### Fonts
+
+// - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+// - Weights: 500, 700
+
+// ## Icons

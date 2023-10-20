@@ -1,0 +1,137 @@
+.wrapper-home {
+  padding: 28px 0 0 60px;
+}
+.container-text-image-home {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 64px;
+  max-width: 500px;
+}
+
+.home-paragraph {
+  font-size: 18px;
+  color: hsl(257, 7%, 63%);
+  max-width: 436px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 30px;
+}
+
+.home-text {
+  width: 50%;
+}
+
+.home-image {
+  width: 100%;
+  height: fit-content;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+
+  &:hover {
+    background-color: hsl(180deg 76.03% 71.89%);
+  }
+}
+
+// .container-input {
+//   display: flex;
+//   gap: 20px;
+//   align-items: center;
+
+//   margin-top: 60px;
+//   margin-right: 60px;
+//   padding: 48px;
+
+//   border-radius: 8px;
+//   background-color: hsl(257, 27%, 26%);
+//   background-image: url(../../assets/bg-shorten-desktop.svg);
+//   input {
+//     display: flex;
+//     flex: 1;
+//     padding: 20px;
+
+//     border-radius: 12px;
+//     border: none;
+//     outline: 0;
+
+//     font-size: 16px;
+//   }
+
+//   .shortenIt-button {
+//     border-radius: 8px;
+//   }
+// }
+
+
+// .url-container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   border: 1px solid #ccc;
+//   margin-right: 60px;
+//   margin-block: 20px;
+//   padding-inline: 24px;
+
+//   background-color: burlywood;
+
+//   input {
+//     display: flex;
+//     flex: 1;
+//     padding: 12px;
+//     border: navajowhite;
+//     background-color: transparent;
+//     outline: 0;
+//   }
+
+//   .copy-button {
+//     border-radius: 8px;
+//     padding: 12px 36px;
+//   }
+
+//   .container-copy-link {
+//     display: flex;
+//     align-items: center;
+//     gap: 20px;
+//   }
+// }
+
+@media screen and (max-width: 375px) {
+
+  .wrapper-home {
+    padding: 0;
+  }
+  .container-text-image-home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .home-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-image {
+    width: 122%;
+    margin: 20px 0px 20px 42px;
+  }
+
+  .home-paragraph {
+    padding-inline: 16px;
+  }
+}
